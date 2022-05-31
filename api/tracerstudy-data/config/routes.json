@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tracerstudy-data",
+      "handler": "tracerstudy-data.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tracerstudy-data/count",
+      "handler": "tracerstudy-data.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tracerstudy-data/:id",
+      "handler": "tracerstudy-data.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tracerstudy-data",
+      "handler": "tracerstudy-data.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tracerstudy-data/:id",
+      "handler": "tracerstudy-data.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tracerstudy-data/:id",
+      "handler": "tracerstudy-data.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

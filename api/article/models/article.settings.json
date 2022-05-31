@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 1
+    },
+    "article_medias": {
+      "via": "article",
+      "collection": "article-media"
+    },
+    "deskripsi": {
+      "type": "text",
+      "maxLength": 10000
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "maxLength": 10
+    }
+  }
+}

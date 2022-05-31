@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_video",
+  "info": {
+    "name": "gallery_video",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}
