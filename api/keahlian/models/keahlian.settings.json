@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keahlians",
+  "info": {
+    "name": "keahlian"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "keahlian": {
+      "type": "string",
+      "required": true
+    },
+    "dosen": {
+      "collection": "dosen",
+      "via": "expertise",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publications",
+  "info": {
+    "name": "publication"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "publikasi": {
+      "type": "string"
+    },
+    "dosen": {
+      "collection": "dosen",
+      "via": "publication",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiences",
+  "info": {
+    "name": "experience"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pengalaman": {
+      "type": "string",
+      "required": true
+    },
+    "dosen": {
+      "collection": "dosen",
+      "via": "experiences",
+      "dominant": true
+    }
+  }
+}
