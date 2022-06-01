@@ -46,7 +46,7 @@
       "pluginOptions": {}
     },
     "kontak": {
-      "type": "string",
+      "type": "text",
       "required": false,
       "minLength": 11,
       "maxLength": 15

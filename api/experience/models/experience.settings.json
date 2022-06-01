@@ -16,8 +16,8 @@
       "required": true
     },
     "dosen": {
-      "collection": "dosen",
       "via": "experiences",
+      "collection": "dosen",
       "dominant": true
     }
   }

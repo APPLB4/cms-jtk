@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "publications",
   "info": {
-    "name": "publication"
+    "name": "publication",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,11 +13,11 @@
   "pluginOptions": {},
   "attributes": {
     "publikasi": {
-      "type": "string"
+      "type": "text"
     },
     "dosen": {
-      "collection": "dosen",
       "via": "publication",
+      "collection": "dosen",
       "dominant": true
     }
   }

@@ -16,8 +16,8 @@
       "required": true
     },
     "dosen": {
-      "collection": "dosen",
       "via": "expertise",
+      "collection": "dosen",
       "dominant": true
     }
   }
