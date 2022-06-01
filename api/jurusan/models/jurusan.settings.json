@@ -39,6 +39,9 @@
     "slug": {
       "type": "uid",
       "targetField": "judul"
+    },
+    "visimisi": {
+      "type": "text"
     }
   }
 }
