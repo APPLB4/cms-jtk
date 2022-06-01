@@ -49,7 +49,6 @@
     "kontak": {
       "type": "text",
       "required": true,
-      "maxLength": 15,
       "minLength": 1
     },
     "matkul": {
